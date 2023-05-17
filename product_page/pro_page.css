@@ -68,3 +68,35 @@ body{
     border: none;
     justify-content: right;
 }
+
+#product{
+    margin-top: 20px;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+div > img{
+    
+    width: 100%;
+}
+
+.card > h3{
+    margin-left: 10px;
+}
+
+.desc-price > p:first-child{
+    margin-left: 10px;
+}
+
+.desc-price > p:nth-child(2){
+    text-align: right;
+    margin-right: 10px;
+}
