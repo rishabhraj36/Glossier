@@ -1,0 +1,70 @@
+body{
+    margin-top: 20px;
+    background-color: rgb(225,229,238);
+}
+
+#all {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#all:hover{
+    background-color: black;
+    color: white;
+}
+
+#face {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#face:hover{
+    background-color: black;
+    color: white;
+}
+
+#eyes {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#eyes:hover{
+    background-color: black;
+    color: white;
+}
+
+#lips {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#lips:hover{
+    background-color: black;
+    color: white;
+}
+
+#tools {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#tools:hover{
+    background-color: black;
+    color: white;
+}
+
+#sort{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#sort-by-price{
+    background-color: rgb(225,229,238);
+    border: none;
+    justify-content: right;
+}
