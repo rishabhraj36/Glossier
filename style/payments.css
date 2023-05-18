@@ -22,6 +22,8 @@ body {
   #left-parent-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-row-gap: 8%
+  
   }
   
   .form-row.two-columns{
@@ -36,6 +38,8 @@ body {
   .form-row input {
     width: 100%;
     padding: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   
   .form-row.two-columns {
@@ -126,7 +130,23 @@ body {
   border-radius: 50px; 
   border: 1px solid #ccc; 
 }
-
-
-    
+#terms-condition{
+  color: #9c9b9b;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+ h3{
+text-align: right;
+padding-right:3% ;
+}
   
+.credit-card-box {
+  width: 90%; /* Adjust the width as needed */
+  margin-top: 10px;
+}
+
+.credit-card-box input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
