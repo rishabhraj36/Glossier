@@ -1,4 +1,4 @@
-let baseURL = `http://localhost:3000`
+let baseURL = `http://localhost:8000`
 
 const productList = document.getElementById("product-list")
 
