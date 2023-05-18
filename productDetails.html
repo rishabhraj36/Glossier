@@ -35,29 +35,40 @@
 
 .descDiv{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 55%;
     /* margin: auto; */
- 
+    margin: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
 }
 .descDiv>#price{
-    margin-top: 30px ;
+    margin-top: 10px ;
     font-weight: bold;
 }
 .descDiv>#desc{
-    width: 70%;
-    margin: 30px 0px;
+    width: 50%;
+    margin: 10px 0px;
 }
-.descDiv> button{
-    width: 40%;
+.descDiv> div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.descDiv> div>button{
+    width: 60%;
     margin: auto;
     background-color: black;
     color: #ffffff;
     border-radius: 10px;
     padding: 10px;
-    margin-top: 30px;
+    margin: 10px;
+    border: none;
+}
+.descDiv> div>button:hover{
+    background-color: crimson;
 }
 
 /******** WHY ITS SPECIAL SECTION ********/
@@ -155,7 +166,7 @@ hr{
 <body>
     <!--****** NAVBAR SECTION  *********** -->
 
-     <div id="navbar"><h1>navbar</h1></div> 
+     <div id="navbar" style="text-align: center;"><h1>navbar</h1></div> 
 
     <!--****** DETAILS SECTION  *********** -->
     
@@ -179,7 +190,7 @@ hr{
      <hr>
     <!--****** FOOTER SECTION *********** -->
 
-     <div id="footer"><h1>footer</h1></div> 
+     <div id="footer" style="text-align: center;"><h1>footer</h1></div> 
 
     <!--****** END *********** -->
 
@@ -187,6 +198,8 @@ hr{
 </body>
 <script>
 //**********  NAVBAR SECTION  ******** 
+ let nav=document.getElementById("navbar");
+//  nav.innerHTML=navbar()
 
 //**********  DETAILS SECTION   ******** 
 
@@ -205,18 +218,24 @@ function details() {
     name.id="name"
 
     name.textContent="Milky Jelly Cleanser";
-    let price=document.createElement("b");
+    let price=document.createElement("h3");
     price.id="price"
     price.textContent="$ 18";
 
     let desc=document.createElement("b");
     desc.id="desc"
-    desc.textContent="A nourishing and pH-balanced gel-cream cleanser that plays nicely with all skin types  Cleanser keeps skin nourished.  ";
+    desc.textContent="A nourishing and pH-balanced gel-cream cleanser that plays nicely with all skin types. ";
+
+    let buttonDiv=document.createElement("div");
 
     let button=document.createElement("button");
     button.textContent="Add to bag"
 
-   descDiv.append(name,price,desc,button);
+    let button1=document.createElement("button");
+    button1.textContent="Return"
+
+    buttonDiv.append(button,button1)
+   descDiv.append(name,price,desc,buttonDiv);
    document.getElementById("details").append(imageDiv,descDiv)
 }
 
@@ -315,7 +334,8 @@ function awards(){
 
 }
 //**********  FOOTER SECTION  ******** 
-
+let footer=document.getElementById("footer");
+//  footer.innerHTML=footer()
 //**********  END   ******** 
 
 
