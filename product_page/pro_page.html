@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="pro_page.css">
+</head>
+<body>
+    <div id="main">
+        <div id="Product-filter">
+            <button id="all">All</button>
+            <button id="face">Face</button>
+            <button id="eyes">Eyes</button>
+            <button id="lips">Lips</button>
+            <button id="tools">Tools</button>
+        </div>
+        <di id="item_sort">
+            <p>30 items</p>
+            <div id="sort">
+            Sort by price <select id="sort-by-price" onclick="handleprice()">
+                    <option value="">Select</option>
+                    <option value="htl" id="sort-htl">High to Low</option>
+                    <option value="lth" id="sort-lth">Low to High</option>
+                </select>
+            </div>
+        </div>
+        <div id="product">
+            <div id="product-list">
+                <!--append img and name and des and price here-->
+            </div>
+        </div>
+    </div>
+    <script src="pro_page.js"></script>
+</body>
+</html>
