@@ -143,10 +143,27 @@ padding-right:3% ;
 .credit-card-box {
   width: 90%; /* Adjust the width as needed */
   margin-top: 10px;
+  
 }
 
 .credit-card-box input {
   width: 100%;
   padding: 5px;
   margin-bottom: 5px;
+  
 }
+.credit-card-large-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+   border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.credit-card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
