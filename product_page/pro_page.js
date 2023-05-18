@@ -2,13 +2,18 @@ let baseURL = `http://localhost:3000`
 
 const productList = document.getElementById("product-list")
 
+let items = [];
+
+
+
 async function getdata(){
     try{
         
         let response = await fetch(`${baseURL}/products`)
         let data = await response.json()
         console.log(data)
-        displayData(data)
+        items = data;
+        displayData(items)
     }
     catch(err){
         console.log(err)
@@ -51,22 +56,29 @@ function displayData(data){
     })
 }
 
-// async function handlePrice(){
-//     const select = document.getElementById("sort-by-price").value
 
-//     if(select == "htl"){
-//         let data1 = data.sort((a, b) => +b.price - +a.price)
-//         displayData(data1)
+
+
+
+async function handleprice(){
+     const select = document.getElementById("sort-by-price").value
+
+    if(select === "htl"){
+        console.log(items)
+        let data1 = items.sort((a, b) => +b.price - +a.price)
+        displayData(data1)
         
-//     }
+    }
 
-//     if(select == "lth"){
-//         let data2 = data.sort((a, b) => +a.price - +b.price)
-//         displayData(data2)
+    if(select === "lth"){
+        let data2 = items.sort((a, b) => +a.price - +b.price)
+        displayData(data2)
             
-//     }
+    }
    
-// }
+}
+
+
 
 
 function addtodetailpage(elem){
