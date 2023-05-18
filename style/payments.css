@@ -1,0 +1,132 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #payment-outer-div {
+    display: flex;
+  }
+  
+  #payment-left {
+    background-color: #ffffff;
+    flex: 1.54;
+    padding: 20px;
+  }
+  
+  #payment-right {
+    background-color: #f7f7f7;
+    flex: 1;
+    padding: 20px;
+  }
+  #left-parent-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .form-row.two-columns{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    align-items: center;
+  }
+  .form-row{
+    padding: 2%;
+  }
+  .form-row input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .form-row.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ .form-row.three-columns{
+  grid-template-columns: repeat(3,1fr
+  );
+  display: grid;
+  grid-gap:20px;
+ }
+
+ #boxes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.box-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-text {
+  display: flex;
+  align-items: center;
+}
+
+
+.right-text {
+  font-weight: bold;
+}
+
+.right-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.right-text img {
+  width: 10%;
+  margin-left: 10px; 
+}
+.right-text-afterpay{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.right-text-afterpay img{
+  width: 20%;
+  margin-left: 10px;
+  
+}
+#pay-now-btn {
+  width: 25%;
+  padding: 2%;
+  border-radius: 50px; 
+  border: 1px solid #ccc; 
+}
+
+
+    
+  
