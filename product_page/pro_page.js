@@ -2,6 +2,17 @@ let baseURL = `http://localhost:8000`
 
 const productList = document.getElementById("product-list")
 
+const all = document.getElementById("all")
+
+const face = document.getElementById("face")
+face.addEventListener("click", showFace)
+
+const eyes = document.getElementById("eyes")
+
+const lips = document.getElementById("lips")
+
+
+
 let items = [];
 
 
@@ -56,7 +67,11 @@ function displayData(data){
     })
 }
 
-
+function showFace(){
+    productList.innerHTML = ""
+    document.getElementById("face").style.backgroundColor = "black";
+    location.href = "/Glossier/ForTest/face.html"
+}
 
 
 
@@ -64,7 +79,7 @@ async function handleprice(){
      const select = document.getElementById("sort-by-price").value
 
     if(select === "htl"){
-        console.log(items)
+        
         let data1 = items.sort((a, b) => +b.price - +a.price)
         displayData(data1)
         
@@ -84,5 +99,5 @@ async function handleprice(){
 function addtodetailpage(elem){
     localStorage.setItem("product-items", JSON.stringify(elem))
 
-    //window.location.href = "productdetail.html"
+    window.location.href = "productDetails.html"
 }
