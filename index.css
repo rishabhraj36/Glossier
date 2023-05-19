@@ -1,0 +1,166 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav1 {
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 90%;
+    margin: auto;
+    padding-left: 20px;
+    /* padding-top: 1px; */
+    align-items: center;
+}
+
+.nav1>p {
+    margin-top: 10px;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+}
+
+.nav2>div+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 p {
+    margin: 10px;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    #res {
+
+        display: none;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    #res {
+
+        display: none;
+    }
+}
+
+.body1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body1>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body1 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body1 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body1 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body1 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+
+
+#body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#body img {
+    width: 100%;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    #body {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    #body {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.body2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.body2>div {
+    height: 600px;
+}
+
+.body2>div>img {
+    display: block;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body2 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body2 {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.body3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body3>div>P {
+    width: 50%;
+}
