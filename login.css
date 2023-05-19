@@ -45,11 +45,11 @@ color: black;
     box-sizing: border-box;
 }
 .signBtn{
-   border-bottom: 2px solid black;
-   border-right: 2px solid black; 
+   border-bottom: 1px solid black;
+   border-right: 1px solid black; 
 }
 .createBtn{
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 button:hover{
     border: 1px dotted black;

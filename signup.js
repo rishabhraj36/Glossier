@@ -22,8 +22,16 @@ function signup() {
             password: password
         }
         console.log(obj);
-        arr.push(obj);
-        localStorage.setItem("signup-data", JSON.stringify(arr));
-        window.open("login.html");
+        const checkbox = document.getElementById("checkbox1");
+        if(checkbox.checked == false)
+       {
+        alert("Please accept the Terms of Use and Privacy Policy");
+       }
+       else{
+           arr.push(obj);
+           localStorage.setItem("signup-data", JSON.stringify(arr));
+           window.open("login.html");
+        
+       }
     }
 }
