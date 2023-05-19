@@ -182,13 +182,8 @@ h2{
   align-items: center; /* Center horizontally */
 }
 
-#payment-right{
+#payment-right p{
   text-align: right;
   color: #9c9b9b;
   text-decoration: underline;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f7f7f7;
 }

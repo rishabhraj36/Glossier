@@ -119,12 +119,9 @@ document.addEventListener('DOMContentLoaded', function() {
       highlightInvalidField(cardCVV);
     }
 
-    // If the form is valid, submit it
     if (isValid) {
-      // Show success message and redirect to the homepage
       alert('Payment successful. Redirecting to the homepage.');
-      // Uncomment the following line to submit the form programmatically
-      // form.submit();
+    
     } else {
       // Show error message with specific error details
       alert('Please fix the following errors:\n' + errorMessage);
@@ -165,7 +162,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Validate for MM/YYYY format
     return /^(0[1-9]|1[0-2])\/(20)\d{2}$/.test(date);
   }
-  // Add event listener to the circle icons
 var circleIcons = document.querySelectorAll('.circle-icon');
 circleIcons.forEach(function(icon) {
   icon.addEventListener('click', function() {
