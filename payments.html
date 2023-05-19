@@ -1,169 +1,160 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Payments</title>
-    <link rel="stylesheet" href="./style/payments.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payments</title>
+  <link rel="stylesheet" href="./style/payments.css">
 
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="payment-outer-div">
-      <div id="payment-left">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="payment-outer-div">
+    <div id="payment-left">
+      <div>
+        <h2>Checkout</h2>
+      </div>
+      <!-- flex grid -->
+      <div id="left-parent-grid">
         <div>
-          <h2>
-            Checkout
-          </h2>
+          <h3>Contacts</h3>
         </div>
-        <!-- flex grid -->
-        <div id="left-parent-grid">
-          <div>
-            <h3>Contacts</h3>
+        <div id="contacts">
+          <form>
+            <div class="form-row two-columns">
+              <input type="text" id="first-name" placeholder="First Name">
+              <input type="text" id="last-name" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+              <input type="text" id="phone" placeholder="Phone Number">
+            </div>
+            <div class="form-row">
+              <input type="text" id="email" placeholder="Email">
+            </div>
+          </form>
+        </div>
+        <div>
+          <h3>Ship To</h3>
+        </div>
+        <div id="ship-to">
+          <form>
+            <div class="form-row">
+              <!-- <select id="country" name="country">
+               <option value="usa">India</option>
+                <option value="canada">Canada</option>
+                 <option value="uk">UK</option>
+              </select> -->
+              <input type="text" name="" id="country" placeholder="Country">
+            </div>
+            <div class="form-row two-columns">
+              <input type="text" id="address" placeholder="Address">
+              <input type="text" id="apt-number" placeholder="Apartment Number">
+            </div>
+            <div class="form-row three-columns">
+              <input type="text" id="city" placeholder="City">
+              <input type="text" id="state" placeholder="State">
+              <input type="text" id="zipcode" placeholder="Zipcode">
+            </div>
+          </form>
+        </div>
+        <div>
+          <h3>Delivery</h3>
+        </div>
+        <div id="boxes-container">
+          <div class="box">
+            <div class="circle-icon">
+              <span class="check-icon"></span>
+            </div>
+            <div class="box-text">
+              <span class="left-text">Standard</span>
+              <span class="right-text">Free</span>
+            </div>
           </div>
-          <div id="contacts">
-            <form>
+          <div class="box">
+            <div class="circle-icon">
+              <span class="check-icon"></span>
+            </div>
+            <div class="box-text">
+              <span class="left-text">Expedited</span>
+              <span class="right-text">12$</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle-icon">
+              <span class="check-icon"></span>
+            </div>
+            <div class="box-text">
+              <span class="left-text">Overnight</span>
+              <span class="right-text">19$</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Payments</h3>
+        </div>
+        <div>
+          <div class="credit-card-large-box">
+            <div class="box">
+              <div class="circle-icon">
+                <span class="check-icon"></span>
+              </div>
+              <div class="box-text">
+                <span class="left-text">Credit Card</span>
+                <span class="right-text">
+                  <img src="./assets/master-card.png" alt="">
+                  <img src="./assets/visa-card.png" alt="">
+                  <img src="./assets/discover-card.png" alt="">
+                </span>
+              </div>
+            </div>
+            <div class="credit-card-box">
+              <input type="text" id="Card" placeholder="Card Number">
+              <input type="text" id="Nameoncard" placeholder="Name on Card">
               <div class="form-row two-columns">
-                <input type="text" id="first-name" placeholder="First Name">
-                <input type="text" id="last-name" placeholder="Last Name">
-              </div>
-        
-              <div class="form-row">
-                
-                <input type="text" id="phone" placeholder="Phone Number">
-              </div>
-        
-              <div class="form-row">
-                <input type="text" id="email" placeholder="Email">
-              </div>
-            </form>
-          </div>
-          <div>
-            <h3>Ship To</h3>
-          </div>
-          <div id="ship-to">
-             <form>
-              <div class="form-row">
-                <!-- <select id="country" name="country">
-                 <option value="usa">India</option>
-                  <option value="canada">Canada</option>
-                   <option value="uk">UK</option>
-                </select> -->
-                <input type="text" name="" id="country" placeholder="Country">
-              </div>
-                <div class="form-row two-columns">
-                  <input type="text" id="address" placeholder="Address">
-                  <input type="text" id="apt-number" placeholder="Apartment Number">
-                </div>
-
-                
-    <div class="form-row three-columns">
-      <input type="text" id="city" placeholder="City">
-      <input type="text" id="state" placeholder="State">
-      <input type="text" id="zipcode" placeholder="Zipcode">
-    </div>
-              </form>
-
-          </div>
-          <div>
-            <h3>Delivery</h3>
-          </div>
-          <div id="boxes-container">
-            <div class="box">
-              <div class="circle-icon">
-                <span class="check-icon"></span>
-              </div>
-              <div class="box-text">
-                <span class="left-text">Standard</span>
-                <span class="right-text">Free</span>
-              </div>
-            </div>
-            <div class="box">
-              <div class="circle-icon">
-                <span class="check-icon"></span>
-              </div>
-              <div class="box-text">
-                <span class="left-text">Expedited</span>
-                <span class="right-text">12$</span>
-              </div>
-            </div>
-            <div class="box">
-              <div class="circle-icon">
-                <span class="check-icon"></span>
-              </div>
-              <div class="box-text">
-                <span class="left-text">Overnight</span>
-                <span class="right-text">19$</span>
-              </div>
-            </div>
-          </div>
-          
-          <div>
-            <h3>Payments</h3>
-          </div>
-          <div>
-            <div class="credit-card-large-box">
-              <div class="box">
-                <div class="circle-icon">
-                  <span class="check-icon"></span>
-                </div>
-                <div class="box-text">
-                  <span class="left-text">Credit Card</span>
-                  <span class="right-text"><img src="./assets/master-card.png" alt=""> <img src="./assets/visa-card.png" alt=""><img src="./assets/discover-card.png" alt=""></span>
-                  
-                </div>
-              </div>
-              <div class="credit-card-box">
-                <input type="text" id="Card" placeholder="Card Number">
-                <input type="text" id="Nameoncard" placeholder="Name on Card">
-                <div class="form-row two-columns">
-                   <input type="text" id="CardExpiry" placeholder="Expire Date (MM/YYYY)">
+                <input type="text" id="CardExpiry" placeholder="Expire Date (MM/YYYY)">
                 <input type="text" id="CardCVV" placeholder="CVV">
-                </div>
-               
               </div>
             </div>
-          
-            <div class="box">
-              <div class="circle-icon">
-                <span class="check-icon"></span>
-              </div>
-              <div class="box-text">
-                <span class="left-text">Paypal</span>
-                <span class="right-text"><img src="https://logos-download.com/wp-content/uploads/2016/03/PayPal_Logo_2014.png" alt=""></span>
-              </div>
-            </div>
-            <div class="box">
-              <div class="circle-icon">
-                <span class="check-icon"></span>
-              </div>
-              <div class="box-text">
-                <span class="left-text">Afterpay</span>
-                <span class="right-text-afterpay"><img src="https://business.afterpay.com/rs/539-RJA-633/images/AP_logo_lockup_6328x2204_blackclear_png.png" alt=""></span>
-              </div>
-            </div>
-            <div id="terms-condition">
-              <span>By clicking pay now I agree to Glossier terms and condition of Glossier</span>
-
-            </div>
-            <button id="pay-now-btn">Pay Now</button>
           </div>
+          <div class="box">
+            <div class="circle-icon">
+              <span class="check-icon"></span>
+            </div>
+            <div class="box-text">
+              <span class="left-text">Paypal</span>
+              <span class="right-text">
+                <img src="https://logos-download.com/wp-content/uploads/2016/03/PayPal_Logo_2014.png" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle-icon">
+              <span class="check-icon"></span>
+            </div>
+            <div class="box-text">
+              <span class="left-text">Afterpay</span>
+              <span class="right-text-afterpay">
+                <img src="https://business.afterpay.com/rs/539-RJA-633/images/AP_logo_lockup_6328x2204_blackclear_png.png" alt="">
+              </span>
+            </div>
+          </div>
+          <div id="terms-condition">
+            <span>By clicking pay now I agree to Glossier terms and condition of Glossier</span>
+          </div>
+          <button id="pay-now-btn">Pay Now</button>
         </div>
-        
-        
-      </div>
-      <div id="payment-right">
-        <p>Back to shopping</p>
-
-      </div>
-      <div id="product-payment-cart">
-
       </div>
     </div>
-    
-  <script src="./js/payments.js"></script>  
-  </body> 
+    <div id="payment-right">
+      <p>Back to shopping</p>
+    </div>
+    <div id="product-payment-cart"></div>
+
+  </div>
+ 
+  <script src="./js/payments.js"></script>
+</body>
 </html>
