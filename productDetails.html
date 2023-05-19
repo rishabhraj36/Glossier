@@ -247,7 +247,13 @@ function details(elmObj) {
         location.href="pro_page.html"
     })
 
-    buttonDiv.append(button,button1)
+    let button2=document.createElement("button");
+    button2.textContent="CART PAGE"
+    button2.addEventListener("click", function(){
+        location.href="payments.html"
+    })
+
+    buttonDiv.append(button,button1,button2)
    descDiv.append(name,price,desc,buttonDiv);
    document.getElementById("details").append(imageDiv,descDiv)
 }
@@ -257,6 +263,7 @@ let cart= JSON.parse(localStorage.getItem("cart"))||[];
 function addToCart(elm){
     cart.push(elm);
     localStorage.setItem("cart",JSON.stringify(cart));
+    alert("Item Added to Cart Successfully")
 }
 
 //**********  WHY ITS SPECIAL SECTION  ******** 
