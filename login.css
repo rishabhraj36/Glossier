@@ -54,3 +54,47 @@ color: black;
 button:hover{
     border: 1px dotted black;
   }
+  #parent {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+} */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px ;
+}
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+}
+#footer-bottom2{
+    margin-right: 30%;
+}
