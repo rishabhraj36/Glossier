@@ -1,0 +1,58 @@
+.signupPage{
+  display: flex;
+  flex-direction: column;
+}
+.signCont{
+  width: 50%;
+  margin: 0 auto;
+}
+.signCont>form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.signCont>form input{
+  width: 50%;
+  padding: 15px 25px;
+  border: 2px solid whitesmoke;
+  /* border-bottom: 2px ; */
+  /* border-color: whitesmoke; */
+}
+#fname:hover{
+   border-bottom: 1px solid black;
+}
+#lname:hover{
+  border-bottom: 1px solid black;
+}
+#email:hover{
+  border-bottom: 1px solid black;
+}
+#password:hover{
+  border-bottom: 1px solid black;
+}
+.signBtn{
+  padding: 10px 20px;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.createBtn{
+  border-radius: 5px;
+  background-color: whitesmoke;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+label{
+ /* border: 2px solid red; */
+ color: gray;
+ font-size: 14px;
+}
+.termsCondition{
+  width: 56.75%;
+}
+button:hover{
+  border: 1px dotted black;
+}

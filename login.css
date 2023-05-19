@@ -1,0 +1,56 @@
+.loginPage{
+    display: flex;
+    flex-direction: column;
+}
+.logCont{
+    width: 50%;
+    margin: 0 auto;
+}
+.logCont>form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.logCont>form input{
+    width: 50%;
+    padding: 15px 25px;
+    border: 2px solid whitesmoke;
+
+}
+#email:hover{
+    border-bottom: 1px solid black;
+}
+#password:hover{
+    border-bottom: 1px solid black;
+}
+form>a{
+color: black;
+}
+.signBtn{
+    padding: 10px 20px;
+    border: none;
+    background-color: whitesmoke;
+    /* border-radius: 5px; */
+    cursor: pointer;
+}
+.createBtn{
+    margin-left: 15px;
+    /* border-radius: 5px; */
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: 30%;
+    height: 40%;
+    box-sizing: border-box;
+}
+.signBtn{
+   border-bottom: 2px solid black;
+   border-right: 2px solid black; 
+}
+.createBtn{
+    border-bottom: 2px solid black;
+}
+button:hover{
+    border: 1px dotted black;
+  }
