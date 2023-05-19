@@ -1,13 +1,28 @@
-let baseURL = `http://localhost:8000`
+let baseURL = `https://project-api-rqw2.onrender.com`
 
 const productList = document.getElementById("product-list")
 
 const all = document.getElementById("all")
 
+
+
 const face = document.getElementById("face")
 face.addEventListener("click", showFace)
 
+function showFace(){
+    productList.innerHTML = ""
+    
+    location.href = "/Glossier/ForTest/face.html"
+}
+
 const eyes = document.getElementById("eyes")
+eyes.addEventListener("click", showEyes)
+
+function showEyes(){
+    productList.innerHTML = ""
+    
+    location.href = "/Glossier/ForTest/eyes.html"
+}
 
 const lips = document.getElementById("lips")
 
@@ -67,11 +82,7 @@ function displayData(data){
     })
 }
 
-function showFace(){
-    productList.innerHTML = ""
-    document.getElementById("face").style.backgroundColor = "black";
-    location.href = "/Glossier/ForTest/face.html"
-}
+
 
 
 

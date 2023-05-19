@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face items</title>
-    <link rel="stylesheet" href="/Glossier/product_page/pro_page.css">
+    <link rel="stylesheet" href="/Glossier/pro_page.css">
 </head>
 <body>
     <div id="main">
@@ -158,6 +158,42 @@
     
             })
         }
+
+
+    // async function handleprice(){
+    //     const select = document.getElementById("sort-by-price").value
+
+    //     if(select === "htl"){
+            
+    //         let data1 = items.sort((a, b) => +b.price - +a.price)
+    //         displayData(data1)
+            
+    //     }
+
+    //     if(select === "lth"){
+    //         let data2 = items.sort((a, b) => +a.price - +b.price)
+    //         displayData(data2)
+                
+    //     }
+   
+    // }
+
+    function addtodetailpage(elem){
+        localStorage.setItem("product-items", JSON.stringify(elem))
+
+        window.location.href = "/Glossier/productDetails.html"
+    }
+
+    
+    const all = document.getElementById("all")
+    all.addEventListener("click", showAll)
+
+    function showAll(){
+        
+
+        location.href = "/Glossier/pro_page.html"
+    }
+
 
 
 </script>
