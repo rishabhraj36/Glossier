@@ -9,11 +9,13 @@
   <!-- font -->
  
   <style>
-    body {
-   
-    padding: 0;
-    margin: 0;
-  }
+  @import url('https://fonts.cdnfonts.com/css/acumin-pro');
+        body{
+            background-color: #E1E5EE;
+            font-family: 'Acumin Pro', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
   
   #payment-outer-div {
     display: flex;
@@ -231,11 +233,25 @@ h2{
 .order-summary .price {
   float: right;
 }
-
-#imageCart{
+ #imageCart{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
+
+} 
+
+#cartImage{
+  width: 200px;
+  height: 200px;
+}
+
+#logo{
+  width: 5px;
+  height: 5px;
+  position: relative;
+  bottom: 240px;
+  left: 150px;
+  
 }
   </style>
 </head>
@@ -381,7 +397,7 @@ h2{
       <div class="order-summary">
         <h4>Order Summary <span id="length"></span></h4>
         <hr>
-        <div id="imageCart"></div>
+        <div id="imageCart" style="text-align: center;"></div>
         <div id="totalDiv" style="display: flex; justify-content: space-between;">
           <h1 id="total" >Total</h1>
           <h1>$<span id="totalPrice"></span></h1>
@@ -569,26 +585,46 @@ h2{
 
         // paument right section 
         let dataArray=JSON.parse(localStorage.getItem("cart"))||[];
+
         document.getElementById("length").textContent=dataArray.length
 
         let cartSection=document.getElementById("imageCart");
-        let totalPrice=document.getElementById("TotalPrice");
-        let totalP
+
+        let totalPrice=document.getElementById("totalPrice");
+        let totalP=0;
         cart(dataArray)
         function cart(dataArray){
-          console.log("hi")
+          console.log(dataArray)
           cartSection.textContent="";
-          dataArray.map(function(elm){
+          dataArray.forEach(function(elm,index){
+            let card=document.createElement("div");
             let image=document.createElement("img");
             image.src=elm.image
             image.id="cartImage"
-            cartSection.append(image)
-            totalP+=NUMBER(elm.price);
-            totalPrice.textContent=totalP;
+            let name=document.createElement("h4");
+            name.textContent=elm.name
+            let logo=document.createElement("h1");
+            logo.textContent="X"
+            logo.id="logo"
+            logo.addEventListener("click", function(){
+              deleteFun(elm,index)
+            })
+            card.append(image,name,logo)
+            cartSection.append(card)
+            totalP+=parseInt(elm.price);
+            totalPrice.textContent=totalP
           })
-
           
         }
+       function deleteFun(elm,ind){
+        dataArray.splice(ind,1);
+        localStorage.setItem("cart",JSON.stringify(dataArray))
+          // cart(dataArray)
+          totalP-=elm.price;
+          console.log(elm.price)
+          totalPrice.textContent=totalP;
+          window.location.reload()
+       }
 
   </script>
 </body>
