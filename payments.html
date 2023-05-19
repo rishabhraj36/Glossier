@@ -4,12 +4,240 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Payments</title>
-  <link rel="stylesheet" href="./style/payments.css">
+
 
   <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+ 
+  <style>
+    body {
+   
+    padding: 0;
+    margin: 0;
+  }
+  
+  #payment-outer-div {
+    display: flex;
+  }
+  
+  #payment-left {
+    background-color: #ffffff;
+    flex: 1.54;
+    padding: 20px;
+  }
+  
+  #payment-right {
+    background-color: #f7f7f7;
+    flex: 1;
+    padding: 20px;
+  }
+  #left-parent-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 8%
+  
+  }
+  
+  .form-row.two-columns{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    align-items: center;
+  }
+  .form-row{
+    padding: 2%;
+  }
+  .form-row input {
+    width: 100%;
+    padding: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  .form-row.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ .form-row.three-columns{
+  grid-template-columns: repeat(3,1fr
+  );
+  display: grid;
+  grid-gap:20px;
+ }
+
+ #boxes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.circle-icon.clicked .check-icon {
+  background-color: #000;
+}
+
+
+
+
+
+.box-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-text {
+  display: flex;
+  align-items: center;
+}
+
+
+.right-text {
+  font-weight: bold;
+}
+
+.right-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.right-text img {
+  width: 10%;
+  margin-left: 10px; 
+}
+.right-text-afterpay{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.right-text-afterpay img{
+  width: 20%;
+  margin-left: 10px;
+  
+}
+#pay-now-btn {
+  width: 25%;
+  padding: 2%;
+  border-radius: 50px; 
+  border: 1px solid #ccc; 
+  margin-bottom: 15%;
+}
+#terms-condition{
+  color: #9c9b9b;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+ h3{
+text-align: right;
+padding-right:15% ;
+}
+h2{
+  margin-left: 19%;
+}
+  
+.credit-card-box {
+  width: 90%; /* Adjust the*/
+  margin-top: 10px;
+  
+}
+
+.credit-card-box input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 7px;
+  border-radius: 7px; 
+  border: 1px solid #ccc; 
+
+}
+
+.credit-card-large-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+   border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.credit-card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+#payment-right p{
+  text-align: right;
+  color: #9c9b9b;
+  text-decoration: underline;
+}
+
+.order-summary {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.order-summary h4 {
+  margin: 0;
+}
+
+.order-summary .edit {
+  float: right;
+}
+
+.order-summary hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid lightgray;
+  clear: both;
+
+}
+
+.order-summary .subtotal,
+.order-summary .shipping,
+.order-summary .total {
+  margin: 0;
+}
+
+.order-summary .price {
+  float: right;
+}
+
+#imageCart{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+  </style>
 </head>
 <body>
   <div id="payment-outer-div">
@@ -104,9 +332,9 @@
               <div class="box-text">
                 <span class="left-text">Credit Card</span>
                 <span class="right-text">
-                  <img src="./assets/master-card.png" alt="">
-                  <img src="./assets/visa-card.png" alt="">
-                  <img src="./assets/discover-card.png" alt="">
+                  <img src="https://www.logo.wine/a/logo/Mastercard/Mastercard-Logo.wine.svg" alt="">
+                  <img src=https://th.bing.com/th/id/R.c4bd375e38d9eec842b9cd15607e233b?rik=tjfQjNxx3oDeiw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2017%2f05%2fVisa-Logo-PNG-Pic.png&ehk=O33wwbB4SPc1LVGwdSL3x34n85yvh1H9EpA76fLNQgQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+                  <img src="https://www.hustlermoneyblog.com/wp-content/uploads/2016/10/Discover-Logo-300x300.jpg" alt="">
                 </span>
               </div>
             </div>
@@ -150,14 +378,218 @@
     </div>
     <div id="payment-right">
       <p>Back to shopping</p>
-      <div>
-        <h3>cart</h3>
+      <div class="order-summary">
+        <h4>Order Summary <span id="length"></span></h4>
+        <hr>
+        <div id="imageCart"></div>
+        <div id="totalDiv" style="display: flex; justify-content: space-between;">
+          <h1 id="total" >Total</h1>
+          <h1>$<span id="totalPrice"></span></h1>
+        </div>
       </div>
     </div>
   
 
   </div>
  
-  <script src="./js/payments.js"></script>
+  <script >
+                  // Wait for the DOM to be loaded
+        document.addEventListener('DOMContentLoaded', function() {
+          // Get the form and pay now button elements
+          var form = document.querySelector('form');
+          var payNowButton = document.getElementById('pay-now-btn');
+
+          // Add event listener to the Pay Now button click event
+          payNowButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent button click from submitting the form
+
+            // Validate the input fields
+            var firstName = document.getElementById('first-name');
+            var lastName = document.getElementById('last-name');
+            var phone = document.getElementById('phone');
+            var email = document.getElementById('email');
+            var country = document.getElementById('country');
+            var address = document.getElementById('address');
+            var aptNumber = document.getElementById('apt-number');
+            var city = document.getElementById('city');
+            var state = document.getElementById('state');
+            var zipcode = document.getElementById('zipcode');
+            var cardNumber = document.getElementById('Card');
+            var cardName = document.getElementById('Nameoncard');
+            var cardExpiry = document.getElementById('CardExpiry');
+            var cardCVV = document.getElementById('CardCVV');
+
+            var isValid = true; // Flag to track overall form validity
+            var errorMessage = ''; // Store the error message
+
+            // Validate each field individually
+            if (firstName.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'First name is missing.\n';
+              highlightInvalidField(firstName);
+            }
+            if (lastName.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Last name is missing.\n';
+              highlightInvalidField(lastName);
+            }
+            if (phone.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Phone number is missing.\n';
+              highlightInvalidField(phone);
+            } else if (!isValidPhoneNumber(phone.value.trim())) {
+              isValid = false;
+              errorMessage += 'Phone number is invalid. Please enter a 10-digit number.\n';
+              highlightInvalidField(phone);
+            }
+            if (email.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Email address is missing.\n';
+              highlightInvalidField(email);
+            } else if (!isValidEmail(email.value.trim())) {
+              isValid = false;
+              errorMessage += 'Email address is invalid. Please enter a valid email address.\n';
+              highlightInvalidField(email);
+            }
+            if (country.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Country is missing.\n';
+              highlightInvalidField(country);
+            }
+            if (address.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Address is missing.\n';
+              highlightInvalidField(address);
+            }
+            if (aptNumber.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Apartment number is missing.\n';
+              highlightInvalidField(aptNumber);
+            }
+            if (city.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'City is missing.\n';
+              highlightInvalidField(city);
+            }
+            if (state.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'State is missing.\n';
+              highlightInvalidField(state);
+            }
+            if (zipcode.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'ZIP code is missing.\n';
+              highlightInvalidField(zipcode);
+            } else if (!isValidZipCode(zipcode.value.trim())) {
+              isValid = false;
+              errorMessage += 'ZIP code is invalid. Please enter a 6-digit number.\n';
+              highlightInvalidField(zipcode);
+            }
+            if (cardNumber.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Card number is missing.\n';
+              highlightInvalidField(cardNumber);
+            }
+            if (cardName.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Name on card is missing.\n';
+              highlightInvalidField(cardName);
+            }
+            if (cardExpiry.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'Card expiry date is missing.\n';
+              highlightInvalidField(cardExpiry);
+            } else if (!isValidExpiryDate(cardExpiry.value.trim())) {
+              isValid = false;
+              errorMessage += 'Card expiry date is invalid. Please enter in MM/YYYY format.\n';
+              highlightInvalidField(cardExpiry);
+            }
+            if (cardCVV.value.trim() === '') {
+              isValid = false;
+              errorMessage += 'CVV is missing.\n';
+              highlightInvalidField(cardCVV);
+            } else if (!isValidCVV(cardCVV.value.trim())) {
+              isValid = false;
+              errorMessage += 'CVV is invalid. Please enter a 3-digit number.\n';
+              highlightInvalidField(cardCVV);
+            }
+
+            if (isValid) {
+              alert('Payment successful. Redirecting to the homepage.');
+            
+            } else {
+              // Show error message with specific error details
+              alert('Please fix the following errors:\n' + errorMessage);
+            }
+          });
+
+          // Function to highlight an invalid field
+          function highlightInvalidField(field) {
+            field.classList.add('invalid');
+          }
+
+          // Function to check if a phone number is valid
+          function isValidPhoneNumber(phoneNumber) {
+            // Validate for 10 digits
+            return /^\d{10}$/.test(phoneNumber);
+          }
+
+          // Function to check if an email address is valid
+          function isValidEmail(email) {
+            // Validate using a simple regular expression
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+          }
+
+          // Function to check if a ZIP code is valid
+          function isValidZipCode(zipcode) {
+            // Validate for 6 digits
+            return /^\d{6}$/.test(zipcode);
+          }
+
+          // Function to check if a CVV number is valid
+          function isValidCVV(cvv) {
+            // Validate for 3 digits
+            return /^\d{3}$/.test(cvv);
+          }
+
+          // Function to check if an expiry date is valid (MM/YYYY format)
+          function isValidExpiryDate(date) {
+            // Validate for MM/YYYY format
+            return /^(0[1-9]|1[0-2])\/(20)\d{2}$/.test(date);
+          }
+        var circleIcons = document.querySelectorAll('.circle-icon');
+        circleIcons.forEach(function(icon) {
+          icon.addEventListener('click', function() {
+            this.classList.toggle('clicked');
+          });
+        });
+
+        });
+
+
+        // paument right section 
+        let dataArray=JSON.parse(localStorage.getItem("cart"))||[];
+        document.getElementById("length").textContent=dataArray.length
+
+        let cartSection=document.getElementById("imageCart");
+        let totalPrice=document.getElementById("TotalPrice");
+        let totalP
+        cart(dataArray)
+        function cart(dataArray){
+          console.log("hi")
+          cartSection.textContent="";
+          dataArray.map(function(elm){
+            let image=document.createElement("img");
+            image.src=elm.image
+            image.id="cartImage"
+            cartSection.append(image)
+            totalP+=NUMBER(elm.price);
+            totalPrice.textContent=totalP;
+          })
+
+          
+        }
+
+  </script>
 </body>
 </html>
