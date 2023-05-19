@@ -202,41 +202,61 @@ hr{
 //  nav.innerHTML=navbar()
 
 //**********  DETAILS SECTION   ******** 
+let elmObj=JSON.parse(localStorage.getItem("product-items"))|| {
+      "id": 1,
+      "image": "https://glossier-prod.imgix.net/files/glossier-cleanserduo-01.png?auto=format&q=40&w=900",
+      "name": "Milky Jelly Cleanser",
+      "description": "Nourishing Non-comedogenic vegan",
+      "price": 36,
+      "category": "skincare"
+    };
 
-details()
-function details() {
-    
+details(elmObj)
+function details(elmObj) {
+    console.log(elmObj)
     let imageDiv=document.createElement("div");
     imageDiv.id="imageDiv";
     let image=document.createElement("img");
-    image.src="https://glossier-prod.imgix.net/products/glossier-mjc-carousel-01.png?auto=format&q=40&w=540";
+    image.src=elmObj.image;
     imageDiv.append(image);
 
     let descDiv=document.createElement("div");
     descDiv.className="descDiv";
+
     let name=document.createElement("h1");
     name.id="name"
+    name.textContent=elmObj.name;
 
-    name.textContent="Milky Jelly Cleanser";
     let price=document.createElement("h3");
     price.id="price"
-    price.textContent="$ 18";
+    price.textContent="$"+elmObj.price;
 
     let desc=document.createElement("b");
     desc.id="desc"
-    desc.textContent="A nourishing and pH-balanced gel-cream cleanser that plays nicely with all skin types. ";
+    desc.textContent=elmObj.description;
 
     let buttonDiv=document.createElement("div");
 
     let button=document.createElement("button");
     button.textContent="Add to bag"
+    button.addEventListener("click", function(){ addToCart(elmObj);})
 
     let button1=document.createElement("button");
     button1.textContent="Return"
+    button1.addEventListener("click", function(){
+        location.href="pro_page.html"
+    })
 
     buttonDiv.append(button,button1)
    descDiv.append(name,price,desc,buttonDiv);
    document.getElementById("details").append(imageDiv,descDiv)
+}
+
+let cart= JSON.parse(localStorage.getItem("cart"))||[];
+
+function addToCart(elm){
+    cart.push(elm);
+    localStorage.setItem("cart",JSON.stringify(cart));
 }
 
 //**********  WHY ITS SPECIAL SECTION  ******** 
