@@ -1,0 +1,260 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://glossier-prod.imgix.net/files/glossier-cleanserduo-01.png?auto=format&q=40&w=900",
+      "name": "Milky Jelly Cleanser",
+      "description": "Nourishing Non-comedogenic vegan",
+      "price": 36,
+      "category": "skincare"
+    },
+    {
+      "id": 2,
+      "image": "https://glossier-prod.imgix.net/products/glossier-futuredew-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Futuredew",
+      "description": "Made skin look more radiant and hydrated.",
+      "price": 40,
+      "category": "makeup"
+    },
+    {
+      "id": 3,
+      "image": "https://glossier-prod.imgix.net/products/glossier-bdc-wildfig-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Balm Dotcom",
+      "description": "Lips looked hydrated and conditioned",
+      "price": 24,
+      "category": "skincare"
+    },
+    {
+      "id": 4,
+      "image": "https://glossier-prod.imgix.net/products/glossier-mjc-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Milky Jelly Cleanser",
+      "description": "Nourishing Non-comedogenic Vegan Soothing Cruelty",
+      "price": 40,
+      "category": "makeup"
+    },
+    {
+      "id": 5,
+      "image": "https://glossier-prod.imgix.net/products/glossier-priming-moisturizer-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Priming Moisturizer",
+      "description": "Anti-redness complex quickly soothes stressed skin",
+      "price": 45,
+      "category": "skincare"
+    },
+    {
+      "id": 6,
+      "image": "https://glossier-prod.imgix.net/products/glossier-bdctrio-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Balm Dotcom Trio",
+      "description": "Packed with antioxidants and hydrating natural emollients",
+      "price": 26,
+      "category": "skincare"
+    },
+    {
+      "id": 7,
+      "image": "https://glossier-prod.imgix.net/products/glossier-solution-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Solution",
+      "description": "Solution made skin look smoother",
+      "price": 25,
+      "category": "skincare"
+    },
+    {
+      "id": 8,
+      "image": "https://glossier-prod.imgix.net/products/glossier-super-pure-carousel-01_85d96349-189e-4750-808e-f2cef2b2a7ae.png?auto=format&q=40&w=900",
+      "name": "Super Pure",
+      "description": "Super Pure gave users visibly clearer",
+      "price": 28,
+      "category": "makeup"
+    },
+    {
+      "id": 9,
+      "image": "https://glossier-prod.imgix.net/products/glossier-super-glow-carousel-01_482fed4b-6f3e-4f9a-be79-8973e31e79b6.png?auto=format&q=40&w=900",
+      "name": "Super Glow",
+      "description": "Super Glow gave users a brighter",
+      "price": 50,
+      "category": "skincare"
+    },
+    {
+      "id": 10,
+      "image": "https://glossier-prod.imgix.net/products/glossier-super-bounce-carousel-01_76a56806-4efa-4df0-9beb-2f030da73fa3.png?auto=format&q=40&w=900",
+      "name": "Super Bounce",
+      "description": "Hyaluronic acid + vitamin b5 serum",
+      "price": 48,
+      "category": "skincare"
+    },
+    {
+      "id": 11,
+      "image": "https://glossier-prod.imgix.net/products/glossier-milkyoil-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Milky Oil",
+      "description": "Waterproof makeup remover",
+      "price": 52,
+      "category": "makeup"
+    },
+    {
+      "id": 12,
+      "image": "https://glossier-prod.imgix.net/products/glossier-pro-retinol-carousel-01_674a9a03-1adf-4a9c-9c47-3fb6ce7abc5d.png?auto=format&q=40&w=900",
+      "name": "Universal Pro-Retinol",
+      "description": "Nightly renewing complex",
+      "price": 36,
+      "category": "makeup"
+    },
+    {
+      "id": 13,
+      "image": "https://glossier-prod.imgix.net/products/glossier-superpack-carousel-01.png?auto=format&q=40&w=900",
+      "name": "The Super Pack",
+      "description": "All three serums",
+      "price": 64,
+      "category": "skincare"
+    },
+    {
+      "id": 14,
+      "image": "https://glossier-prod.imgix.net/products/glossier-boybrow-bdc-futuredew-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Boy Brow + Balm Dotcom + Futuredew",
+      "description": "Brow groomer + balm + oil-serum hybrid",
+      "price": 68,
+      "category": "skincare"
+    },
+    {
+      "id": 15,
+      "image": "https://glossier-prod.imgix.net/products/glossier-moisturizing-moon-mask-carousel-01_73d37e4e-bcd4-44f7-ad6a-4b5448ebeb60.png?auto=format&q=40&w=900",
+      "name": "Moisturizing Moon Mask",
+      "description": "Soothing face treatment",
+      "price": 38,
+      "category": "makeup"
+    },
+    {
+      "id": 16,
+      "image": "https://glossier-prod.imgix.net/products/gsuit-curve-01.png?auto=format&q=40&w=900",
+      "name": "G Suit",
+      "description": "Soft touch lip crème",
+      "price": 25,
+      "category": "makeup"
+    },
+    {
+      "id": 17,
+      "image": "https://glossier-prod.imgix.net/products/glossier-lipcolortrio-carousel-01.png?auto=format&q=40&w=900",
+      "name": "The Lip Color Trio",
+      "description": "G Suit + Ultralip + Generation G",
+      "price": 60,
+      "category": "makeup"
+    },
+    {
+      "id": 18,
+      "image": "https://glossier-prod.imgix.net/products/glossier-gsuitduo-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Two-piece Suit",
+      "description": "Soft touch lip crème",
+      "price": 48,
+      "category": "makeup"
+    },
+    {
+      "id": 19,
+      "image": "https://glossier-prod.imgix.net/products/glossier-pencil-rococo-carousel-01.png?auto=format&q=40&w=900",
+      "name": "No. 1 Pencil",
+      "description": "Perfect glide eyeliner",
+      "price": 32,
+      "category": "makeup"
+    },
+    {
+      "id": 20,
+      "image": "https://glossier-prod.imgix.net/products/glossier-penciltrio-carousel-01.png?auto=format&q=40&w=900",
+      "name": "No. 1 Pencil Trio",
+      "description": "Perfect glide eyeliner",
+      "price": 88,
+      "category": "makeup"
+    },
+    {
+      "id": 21,
+      "image": "https://glossier-prod.imgix.net/products/glossier-linelashduo-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Line + Lash Duo",
+      "description": "Eyeliner pencil + lengthening mascara",
+      "price": 48,
+      "category": "makeup"
+    },
+    {
+      "id": 22,
+      "image": "https://glossier-prod.imgix.net/products/glossier-boybrow-black-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Boy Brow",
+      "description": "Grooming pomade",
+      "price": 24,
+      "category": "body"
+    },
+    {
+      "id": 23,
+      "image": "https://glossier-prod.imgix.net/products/glossier-cloudpaint-beam-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Cloud Paint",
+      "description": "Seamless cheek color",
+      "price": 34,
+      "category": "body"
+    },
+    {
+      "id": 24,
+      "image": "https://glossier-prod.imgix.net/products/glossier-ultralip-lucite-01.png?auto=format&q=40&w=900",
+      "name": "Ultralip",
+      "description": "Nourishing shine and color",
+      "price": 28,
+      "category": "body"
+    },
+    {
+      "id": 25,
+      "image": "https://glossier-prod.imgix.net/products/glossier-generationg-cake-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Generation G",
+      "description": "Sheer matte lipstick",
+      "price": 65,
+      "category": "makeup"
+    },
+    {
+      "id": 26,
+      "image": "https://glossier-prod.imgix.net/products/glossier-lashslick-black-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Lash Slick",
+      "description": "Film form mascara",
+      "price": 38,
+      "category": "body"
+    },
+    {
+      "id": 27,
+      "image": "https://glossier-prod.imgix.net/products/glossier-body-oilwash-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Body Hero Daily Oil Wash",
+      "description": "Nourishing oil wash",
+      "price": 68,
+      "category": "body"
+    },
+    {
+      "id": 28,
+      "image": "https://glossier-prod.imgix.net/products/glossier-body-cream-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Body Hero Daily Perfecting Cream",
+      "description": "Daily perfecting cream",
+      "price": 57,
+      "category": "body"
+    },
+    {
+      "id": 29,
+      "image": "https://glossier-prod.imgix.net/products/glossier-body-drytouchoil-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Body Hero Dry-Touch Oil Mist",
+      "description": "Dry-touch oil mist",
+      "price": 56,
+      "category": "body"
+    },
+    {
+      "id": 30,
+      "image": "https://glossier-prod.imgix.net/products/glossier-body-exfoliating-carousel-01.png?auto=format&q=40&w=900",
+      "name": "Body Hero Exfoliating Bar",
+      "description": "Exfoliating bar",
+      "price": 34,
+      "category": "body"
+    },
+    {
+      "id": 31,
+      "image": "https://glossier-prod.imgix.net/products/glossier-bodyherocomplete-carousel-01.png?auto=format&q=40&w=900",
+      "name": "The Complete Body Hero Collection",
+      "description": "Wash + cream + mist + scrub",
+      "price": 94,
+      "category": "body"
+    },
+    {
+      "image": "https://glossier-prod.imgix.net/products/glossier-wowder-brush-carousel-01.png?auto=format&q=40&w=540",
+      "name": "Wowder Brush",
+      "description": "Powder brush",
+      "price": "20",
+      "category": "makeup",
+      "id": 32
+    }
+  ]
+}

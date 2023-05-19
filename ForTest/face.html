@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face items</title>
+    <link rel="stylesheet" href="/Glossier/product_page/pro_page.css">
+</head>
+<body>
+    <div id="main">
+        <div id="Product-filter">
+            <button id="all">All</button>
+            <button id="face">Face</button>
+            <button id="eyes">Eyes</button>
+            <button id="lips">Lips</button>
+            <button id="tools">Tools</button>
+        </div>
+        <di id="item_sort">
+            <p>10 items</p>
+            <div id="sort">
+            Sort by price <select id="sort-by-price" onclick="handleprice()">
+                    <option value="">Select</option>
+                    <option value="htl" id="sort-htl">High to Low</option>
+                    <option value="lth" id="sort-lth">Low to High</option>
+                </select>
+            </div>
+        </div>
+        <div id="product">
+            <div id="product-list">
+                <!--append img and name and des and price here-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    let faceProduct = [
+        
+        {
+        id: 1,
+        image: "https://glossier-prod.imgix.net/files/glossier-cleanserduo-01.png?auto=format&q=40&w=900",
+        name: "Milky Jelly Cleanser",
+        description: "Nourishing Non-comedogenic vegan",
+        price: "36",
+        category: "skincare"
+        },
+        {
+        id: 2,
+        image: "https://glossier-prod.imgix.net/products/glossier-futuredew-carousel-01.png?auto=format&q=40&w=900",
+        name: "Futuredew",
+        description: "Made skin look more radiant and hydrated.",
+        price: "40",
+        category: "makeup"
+        },
+        {
+        id: 3,
+        image: "https://glossier-prod.imgix.net/products/glossier-bdc-wildfig-carousel-01.png?auto=format&q=40&w=900",
+        name: "Balm Dotcom",
+        description: "Lips looked hydrated and conditioned",
+        price: "24",
+        category: "skincare"
+        },
+        {
+        id: 4,
+        image: "https://glossier-prod.imgix.net/products/glossier-mjc-carousel-01.png?auto=format&q=40&w=900",
+        name: "Milky Jelly Cleanser",
+        description: "Nourishing Non-comedogenic Vegan Soothing Cruelty",
+        price: "40",
+        category: "makeup"
+        },
+        {
+        id: 5,
+        image: "https://glossier-prod.imgix.net/products/glossier-priming-moisturizer-carousel-01.png?auto=format&q=40&w=900",
+        name: "Priming Moisturizer",
+        description: "Anti-redness complex quickly soothes stressed skin",
+        price: "45",
+        category: "skincare"
+        },
+        {
+        id: 6,
+        image: "https://glossier-prod.imgix.net/products/glossier-bdctrio-carousel-01.png?auto=format&q=40&w=900",
+        name: "Balm Dotcom Trio",
+        description: "Packed with antioxidants and hydrating natural emollients",
+        price: "26",
+        category: "skincare"
+        },
+        {
+        id: 7,
+        image: "https://glossier-prod.imgix.net/products/glossier-solution-carousel-01.png?auto=format&q=40&w=900",
+        name: "Solution",
+        description: "Solution made skin look smoother",
+        price: "25",
+        category: "skincare"
+        },
+        {
+        id: 8,
+        image: "https://glossier-prod.imgix.net/products/glossier-super-pure-carousel-01_85d96349-189e-4750-808e-f2cef2b2a7ae.png?auto=format&q=40&w=900",
+        name: "Super Pure",
+        description: "Super Pure gave users visibly clearer",
+        price: "28",
+        category: "makeup"
+        },
+        {
+        id: 9,
+        image: "https://glossier-prod.imgix.net/products/glossier-super-glow-carousel-01_482fed4b-6f3e-4f9a-be79-8973e31e79b6.png?auto=format&q=40&w=900",
+        name: "Super Glow",
+        description: "Super Glow gave users a brighter",
+        price: "50",
+        category: "skincare"
+        },
+        {
+        id: 10,
+        image: "https://glossier-prod.imgix.net/products/glossier-super-bounce-carousel-01_76a56806-4efa-4df0-9beb-2f030da73fa3.png?auto=format&q=40&w=900",
+        name: "Super Bounce",
+        description: "Hyaluronic acid + vitamin b5 serum",
+        price: "48",
+        category: "skincare"
+        }
+
+    ]
+
+        display(faceProduct)
+
+
+        function display(faceProduct){
+            document.getElementById("product-list").textContent = ""
+            faceProduct.map(function(elem){
+
+                const div = document.createElement("div")
+                div.className = "card"
+
+                const img = document.createElement("img")
+                img.src = elem.image
+                img.alt = elem.name
+
+                const name = document.createElement("h3")
+                name.textContent = elem.name
+
+                const desc_price = document.createElement("div")
+                desc_price.classList.add("desc-price")
+
+                const desc = document.createElement("p")
+                desc.textContent = elem.description
+
+                const price = document.createElement("p")
+                price.textContent = "$"+ elem.price
+
+                desc_price.append(desc, price)
+                div.append(img, name, desc_price)
+                div.addEventListener("click", function(){
+                    addtodetailpage(elem)
+                })
+
+                document.getElementById("product-list").append(div);
+    
+            })
+        }
+
+
+</script>
