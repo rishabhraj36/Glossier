@@ -6,10 +6,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+            /* nabar Start */
+      .nav2>div>a{
+  text-decoration: none;
+  margin: 10px;
+  color: rgb(7, 7, 7);
+}
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+        body{
+            background-color: #E1E5EE;
+            font-family: 'Acumin Pro', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }  
+
+        .nav1 {
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 1px;
+  align-items: center;
+}
+
+
+.nav1>p {
+  margin-top: 10px;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+}
+
+.nav2>div+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav2 p {
+  margin: 10px;
+}
+
+
+/* navBar End */
+        .loginPage{
+    display: flex;
+    flex-direction: column;
+}
+
+.logCont{
+    width: 50%;
+    margin: 0 auto;
+}
+.logCont>form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.logCont>form input{
+    width: 50%;
+    padding: 15px 25px;
+    border: 2px solid whitesmoke;
+
+}
+#email:hover{
+    border-bottom: 1px solid black;
+}
+#password:hover{
+    border-bottom: 1px solid black;
+}
+form>a{
+color: black;
+}
+.signBtn{
+    padding: 10px 20px;
+    border: none;
+    background-color: whitesmoke;
+    /* border-radius: 5px; */
+    cursor: pointer;
+}
+.createBtn{
+    margin-left: 15px;
+    /* border-radius: 5px; */
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: 20%;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.signBtn{
+   border-bottom: 1px solid black;
+   border-right: 1px solid black; 
+}
+.createBtn{
+    border-bottom: 1px solid black;
+}
+button:hover{
+    border: 1px dotted black;
+  }
+
+/* footer start */
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;  
+    padding-top: 30px;
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+} */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px ;
+    color: gray;
+}
+
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    color: gray;
+}
+#footer-bottom2{
+    margin-right: 30%;
+}
+    </style>
 </head>
 
 <body>
+<!-- navbar start -->
+
+<div class="nav1">
+    <p>New site, new samples: a whole new world. Claim your free sample in-cart.</p>
+</div>
+<div class="nav2">
+    <div id="Logo">
+        <h2>
+            Glossier
+        </h2>
+    </div>
+    <div id="res">
+       
+       <a href="pro_page.html">SKINCARE</a>
+       <a href="pro_page.html">MAKEUP</a>
+       <a href="pro_page.html">BODY</a>
+       <a href="pro_page.html">FRAGRANCE</a>
+       <a href="pro_page.html">GLOSSIWEAR</a>
+       <a href="#">SETS</a>
+
+
+      </div>
+    <div>
+        <a href="#">SEARCH</a>
+        <a href="login.html">LOG IN</a>
+        <a href="payments.html">BAG <span id="navBag"></span></a>
+    </div>
+</div>
+
+    <!-- navbar end -->
+
     <div class="loginPage">
         <div class="logCont">
             <h1>Login</h1>
@@ -83,4 +274,44 @@
 </body>
 
 </html>
-<script src="login.js"></script>
+<script>
+
+document.getElementById("Logo").addEventListener("click", function(){ location.href="index.html"})
+
+    
+  let dataArray=JSON.parse(localStorage.getItem("cart"))||[];
+
+document.getElementById("navBag").textContent=dataArray.length
+    
+function createNewAccount(){
+    window.open("signup.html");
+}
+var arr = JSON.parse(localStorage.getItem("signup-data")) || [];
+function login() {
+
+    event.preventDefault();
+    // console.log(arr)
+    var email = document.getElementById("email").value
+    var password = document.getElementById("password").value
+    var flag = 0;
+    arr.map(function (elem) {
+        if (elem.email == email && elem.password == password) {
+            flag = 1;
+            var logedInfname = elem.fname;
+            var logedInlname = elem.lname;
+            var checkLogin = true;
+            localStorage.setItem("checkLogin", JSON.stringify(checkLogin));
+            // localStorage.setItem("logedInfname ", JSON.stringify(logedInfname));
+            // localStorage.setItem("logedInlname ", JSON.stringify(logedInlname));
+            window.open("index.html");
+        }
+    })
+    if (flag == 1) {
+        // document.getElementById("heading").textContent="Sign in Successful";
+        alert("Sign in Successful");
+    } else {
+        alert("Wrong Credentials")
+    }
+
+}
+</script>
