@@ -1,5 +1,7 @@
 
-
+function signin(){
+    window.open("login.html");
+}
 
 var arr = JSON.parse(localStorage.getItem("signup-data")) || [];
 

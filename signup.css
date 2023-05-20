@@ -1,7 +1,9 @@
 #parent {
   display: flex;
   justify-content: space-between;
- 
+  /* border-bottom: 2px solid black; */
+  border-top: 2px solid black;
+  padding-top: 30px;
 }
 
 #divleft {
@@ -31,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   margin: 10px 10px 10px 10px ;
+  color: gray;
 }
 
 #footer-bottom1 {
@@ -38,6 +41,7 @@
   justify-content: space-between;
   width: 40%;
   flex-wrap: wrap;
+  color: gray;
 }
 #footer-bottom2{
   margin-right: 30%;
