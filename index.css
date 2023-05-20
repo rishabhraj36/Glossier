@@ -1,0 +1,406 @@
+/* nabar Start */
+.nav2>div>a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(7, 7, 7);
+}
+
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+
+body {
+    background-color: #E1E5EE;
+    font-family: 'Acumin Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav1 {
+    background-color: black;
+    color: white;
+    /* height: 35px; */
+    width: 95%;
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 1px;
+    align-items: center;
+
+}
+
+.nav1>p {
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.nav2>div+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 p {
+    margin: 10px;
+}
+
+
+/* navBar End */
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    #res {
+
+        display: none;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    #res {
+
+        display: none;
+    }
+}
+
+.body1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body1>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body1 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body1 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body1 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body1 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+
+
+#body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#body img {
+    width: 100%;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    #body {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    #body {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.body2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.body2>div {
+    height: 600px;
+}
+
+.body2>div>img {
+    display: block;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body2 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body2 {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.body3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body3>div>P {
+    width: 50%;
+}
+
+.body4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body4>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body4 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body4 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body4 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body4 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box1+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+.body5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body5>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body5 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body5 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body5 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body5 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box2+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+.body6 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body6>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box3 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body6 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body6 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body6 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body6 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box3+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    width: 70px;
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px solid black; */
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+  } */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    color: gray;
+}
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    color: gray;
+}
+
+#footer-bottom2 {
+    margin-right: 30%;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    #foot {
+
+        display: none;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    #foot {
+
+        display: none;
+    }
+}
