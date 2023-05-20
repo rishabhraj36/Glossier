@@ -16,7 +16,7 @@ face.addEventListener("click", showFace)
 function showFace(){
     productList.innerHTML = ""
     
-    location.href = "/Glossier/ForTest/face.html"
+    location.href = "face.html"
 }
 
 const eyes = document.getElementById("eyes")
@@ -25,7 +25,7 @@ eyes.addEventListener("click", showEyes)
 function showEyes(){
     productList.innerHTML = ""
     
-    location.href = "/Glossier/ForTest/eyes.html"
+    location.href = "eyes.html"
 }
 
 const lips = document.getElementById("lips")
