@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <style>
+         
+/******** NAVBAR SECTION **********/
+ /* nabar Start */
+ .nav2>div>a{
+  text-decoration: none;
+  margin: 10px;
+  color: rgb(7, 7, 7);
+}
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+        body{
+            background-color: #E1E5EE;
+            font-family: 'Acumin Pro', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }  
+
+.nav1 {
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 1px;
+  align-items: center;
+}
+
+.nav1>p {
+  margin-top: 10px;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+}
+
+.nav2>div+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav2 p {
+  margin: 10px;
+}
+
+
+/* navBar End */
+/******** DETAILS SECTION **********/
+#details{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #eaecf0;
+    padding: 20px;
+}
+
+#imageDiv>img{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height: 400px;
+    
+   
+}
+
+.descDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    /* margin: auto; */
+    margin: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.descDiv>#price{
+    margin-top: 10px ;
+    font-weight: bold;
+}
+.descDiv>#desc{
+    width: 50%;
+    margin: 10px 0px;
+}
+.descDiv> div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.descDiv> div>button{
+    width: 60%;
+    margin: auto;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+.descDiv> div>button:hover{
+    background-color: crimson;
+}
+
+/******** WHY ITS SPECIAL SECTION ********/
+#divWhy>h4{
+    padding-right: 10px;
+    color: #444040;
+
+}
+#divWhy>b{
+    padding-left: 10px;
+    width: 70%;
+    font-size: 14px;
+    color: #444040;
+}
+
+/******** INGREDIENTS SECTION **********/
+#divIngredients>h4{
+    padding-right: 10px;
+    color: #444040;
+
+}
+#divIngredients>b{
+    padding-left: 10px;
+    width: 70%;
+    font-size: 14px;
+    color: #444040;
+}
+/******** HOW TO USE SECTION **********/
+#divhowToUse>h4{
+    padding-right: 10px;
+    color: #444040;
+
+}
+#divhowToUse>b{
+    padding-left: 10px;
+    width: 70%;
+    font-size: 14px;
+    color: #444040;
+}
+
+/******** AWARDS SECTION **********/
+#divawards>h4{
+    padding-right: 10px;
+    color: #444040;
+
+}
+#divawards>div{
+   display: flex;
+  width: 70%;
+  justify-content: center;
+}
+#divA,#divB{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+}
+#divA>b,#divB>b{
+    font-weight:bold;
+}
+#divA{
+    margin-left: 200px;
+}
+
+
+.img{
+    width: 30%;
+  
+}
+b{
+    font-weight: 400;
+}
+/******** FOOTER SECTION **********/
+
+/******** END **********/
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+hr{
+    width: 80%;
+}
+
+/* footer Section */
+
+/* footer start */
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;  
+    padding-top: 30px;
+    margin-top: 50px;
+   
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+} */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px ;
+    color: gray;
+}
+
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    color: gray;
+}
+#footer-bottom2{
+    margin-right: 30%;
+}
+
+/* footer section */
+
+    </style>
+</head>
+<body>
+    <!--****** NAVBAR SECTION  *********** -->
+
+    <div class="nav1">
+        <p>New site, new samples: a whole new world. Claim your free sample in-cart.</p>
+    </div>
+    <div class="nav2">
+        <div id="Logo" >
+            <h2>
+                Glossier
+            </h2>
+        </div>
+        <div id="res">
+           
+           <a href="pro_page.html">SKINCARE</a>
+           <a href="pro_page.html">MAKEUP</a>
+           <a href="pro_page.html">BODY</a>
+           <a href="pro_page.html">FRAGRANCE</a>
+           <a href="pro_page.html">GLOSSIWEAR</a>
+           <a href="#">SETS</a>
+    
+    
+          </div>
+        <div>
+            <a href="#">SEARCH</a>
+            <a href="login.html">LOG IN</a>
+            <a href="payments.html">BAG <span id="navBag"></span></a>
+        </div>
+    </div> 
+
+    <!--****** DETAILS SECTION  *********** -->
+    
+       <div id="details" ></div> 
+    
+    <!--****** WHY ITS SPECIAL SECTION  ****** -->
+    
+        <div id="whyItsSpecial"></div> 
+     <hr>
+    <!--****** INGREDIENTS SECTION  ****** -->
+
+     <div id="ingredients"></div> 
+     <hr>
+    <!--****** HOW TO USE SECTION  *********** -->
+
+     <div id="howToUse"></div> 
+     <hr>
+    <!--****** AWARDS SECTION  *********** -->
+
+     <div id="awards"></div> 
+     
+    <!--****** FOOTER SECTION *********** -->
+
+    <!--****** Footer Section *******-->
+    <div id="parent">
+        <div id="divleft">
+            <div id="footer-row1">
+                <h3>Company</h3>
+                <p>About us</p>
+                <p>Stores</p>
+                <p>Carrers</p>
+                <p>Blog</p>
+            </div>
+            <div id="footer-row2">
+                <h3>Help</h3>
+                <p>FAQ</p>
+                <p>Contact</p>
+                <p>Shipping</p>
+                <p>Returns</p>
+                <p>Gift card</p>
+            </div>
+        </div>
+    
+        <div id="divright">
+            <div id="footer-row">
+                <img src="https://www.capacityllc.com/wp-content/uploads/2017/12/glossier-logo.png" alt="glossier-logo">
+            </div>
+            <div id="footer-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png" alt="twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="youtube">
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin">
+            </div>
+        </div>
+    
+    </div>
+    <div id="footer-parent">
+        <div id="footer-bottom1">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Accessibility</p>
+            <p>Supply Chain Transparency</p>
+            <p>Cookie settings</p>
+        </div>
+        <div id="footer-bottom2">
+            <p>2021 Glossier. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!--Footer Section End-->
+
+    <!--****** END *********** -->
+
+
+</body>
+<script>
+//**********  NAVBAR SECTION  ******** 
+document.getElementById("Logo").addEventListener("click", function(){ location.href="index.html"})
+
+
+
+let dataArray=JSON.parse(localStorage.getItem("cart"))||[];
+
+document.getElementById("navBag").textContent=dataArray.length
+
+//**********  DETAILS SECTION   ******** 
+let elmObj=JSON.parse(localStorage.getItem("product-items"))|| {
+      "id": 1,
+      "image": "https://glossier-prod.imgix.net/files/glossier-cleanserduo-01.png?auto=format&q=40&w=900",
+      "name": "Milky Jelly Cleanser",
+      "description": "Nourishing Non-comedogenic vegan",
+      "price": 36,
+      "category": "skincare"
+    };
+
+details(elmObj)
+function details(elmObj) {
+    console.log(elmObj)
+    let imageDiv=document.createElement("div");
+    imageDiv.id="imageDiv";
+    let image=document.createElement("img");
+    image.src=elmObj.image;
+    imageDiv.append(image);
+
+    let descDiv=document.createElement("div");
+    descDiv.className="descDiv";
+
+    let name=document.createElement("h1");
+    name.id="name"
+    name.textContent=elmObj.name;
+
+    let price=document.createElement("h3");
+    price.id="price"
+    price.textContent="$"+elmObj.price;
+
+    let desc=document.createElement("b");
+    desc.id="desc"
+    desc.textContent=elmObj.description;
+
+    let buttonDiv=document.createElement("div");
+
+    let button=document.createElement("button");
+    button.textContent="Add to bag"
+    button.addEventListener("click", function(){ addToCart(elmObj);})
+
+    let button1=document.createElement("button");
+    button1.textContent="Return"
+    button1.addEventListener("click", function(){
+        location.href="pro_page.html"
+    })
+
+   
+
+    buttonDiv.append(button,button1,)
+   descDiv.append(name,price,desc,buttonDiv);
+   document.getElementById("details").append(imageDiv,descDiv)
+}
+
+let cart= JSON.parse(localStorage.getItem("cart"))||[];
+
+function addToCart(elm){
+    cart.push(elm);
+    localStorage.setItem("cart",JSON.stringify(cart));
+    let Array=JSON.parse(localStorage.getItem("cart"))||[];
+
+document.getElementById("navBag").textContent=Array.length
+    alert("Item Added to Cart Successfully")
+}
+
+//**********  WHY ITS SPECIAL SECTION  ******** 
+
+why();
+function why(){
+     let  why=document.getElementById("whyItsSpecial");
+     let divWhy=document.createElement("div");
+     divWhy.className="main";
+     divWhy.id="divWhy";
+
+     let heading=document.createElement("h4");
+     heading.textContent="WHY It's SPECIAL"
+
+     let b=document.createElement("b");
+     b.textContent="A creamy, long-wearing eyeliner pencil that glides on smoothly with rich, buildable, blendable color, supplying endless options for creative expression. Go bold or get subtle with demi-matte, dense pigments for crisp, true color that won’t rub, formula goes on in seconds  easily creates a sharp, defined line, with just enough dry-down time to blend it out for a diffused, smokey look if that’s what you’re after.";
+    
+
+     divWhy.append(heading,b)
+     why.append(divWhy);
+   }
+
+//**********  INGREDIENTS SECTION  ******** 
+ingredients();
+function ingredients(){
+     let  ingredients=document.getElementById("ingredients");
+     let divIngredients=document.createElement("div");
+     divIngredients.className="main";
+     divIngredients.id="divIngredients";
+
+     let heading=document.createElement("h4");
+     heading.textContent="INGREDIENTS"
+
+     let b=document.createElement("b");
+     b.textContent=`Grapes - The antioxidant-rich superfood is served two ways in Cleanser Concentrate—Grape Ferment and Grape Juice Extract exfoliate, resurface, and clarify for softer, smoother, more radiant skin.
+Amino Acid Surfactants - A plant-derived substitute for sulfates, they give the formula its soft, silky lather. They create an undetectable film that helps keep the formula’s key ingredients on the skin (instead of just rinsing down the drain), so you actually get all of their benefits with every 60-second cleanse.`
+divIngredients.append(heading,b);
+ingredients.append(divIngredients);
+
+}
+//**********   HOW TO USE SECTION  ********
+howToUse();
+function howToUse(){
+     let  howToUse = document.getElementById("howToUse");
+     let divhowToUse = document.createElement("div");
+     divhowToUse.className="main";
+     divhowToUse.id="divhowToUse";
+
+     let heading=document.createElement("h4");
+     heading.textContent="HOW TO USE"
+
+     let b=document.createElement("b");
+     b.textContent="The secret to leveling up your skincare? Using more than one cleanser. Hear us out—curated to be used in tandem, this duo delivers complimentary benefits for skin that feels soft, smooth, and never stripped. Milky Jelly Cleanser keeps skin nourished and conditioned daily, while Cleanser Concentrate gently exfoliates and brightens your glow whenever youre looking to add a clarifying kick to your evening routine."
+     divhowToUse.append(heading,b);
+     howToUse.append(divhowToUse);
+
+}
+
+//**********  AWARDS SECTION  ******** 
+
+awards();
+function awards(){
+     let  awards = document.getElementById("awards");
+     let divawards = document.createElement("div");
+     divawards.className="main";
+     divawards.id="divawards";
+
+     let heading=document.createElement("h4");
+     heading.textContent="Awards"
+
+     let divA=document.createElement("div");
+     divA.id="divA";
+     let divB=document.createElement("div");
+     divB.id="divB";
+
+
+     let img1=document.createElement("img");
+     img1.src="https://png2.cleanpng.com/sh/27392e69d9c1133802a893bc2d7dc075/L0KzQYm3VsI6N5lBgZH0aYP2gLBuTfFtdKZ3fZ9rZXH4hMq0gB90dZZ5gdV8LYD1eb7skr1tcaF4jNtsaz36ebB1hgIuapJzhtd7LUXlQ4fohsI0OGhqS6IDLkW3QIS5VMkzOWY4SKU6MES2RYG6UsMveJ9s/kisspng-allure-beauty-cosmetics-primer-lipstick-winner-banner-5b36af2307e308.5403249215303104350323.png"
+     img1.className="img"
+     let b1p=document.createElement("p");
+     b1p.textContent="2016"
+     let b11=document.createElement("b");
+     b11.textContent="Alluer's best of Beauty"
+     let img2=document.createElement("img");
+     img2.src="https://interactive.glamour.com/beauty-awards-winners-2022/glamour-logo-badge.bb38b0be.svg"
+     img2.className="img"
+     let b2p=document.createElement("p");
+     b2p.textContent="2021"
+     let b22=document.createElement("b");
+     b22.textContent="Glamour beauty awards"
+     divA.append(img1,b1p,b11);
+     divB.append(img2,b2p,b22);
+     divawards.append(heading,divA, divB);
+     awards.append(divawards);
+
+}
+//**********  FOOTER SECTION  ******** 
+let footer=document.getElementById("footer");
+//  footer.innerHTML=footer()
+//**********  END   ******** 
+
+
+</script>
+</html>
