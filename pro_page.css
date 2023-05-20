@@ -1,0 +1,208 @@
+
+/* nabar Start */
+.nav2>div>a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(7, 7, 7);
+}
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+body{
+    margin-top: 20px;
+    font-weight: 400;
+              background-color: #E1E5EE;
+              font-family: 'Acumin Pro', sans-serif;
+              margin: 0px;
+              padding: 0px;
+          }  
+  
+          .nav1 {
+            background-color: black;
+            color: white;
+            height: 35px;
+            width: 100%;
+            margin: auto;
+            padding-left: 20px;
+            padding-top: 1px;
+            align-items: center;
+          }
+          
+  
+  .nav1>p {
+    margin-top: 10px;
+  }
+  
+  .nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+  }
+  
+  .nav2>div+div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav2 p {
+    margin: 10px;
+  }
+  
+  
+  /* navBar End */
+
+  #main,#product{
+    /* margin-left:10px ; */
+    padding: 20px;
+  }
+
+#all {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#all:hover{
+    background-color: black;
+    color: white;
+}
+
+#face {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#face:hover{
+    background-color: black;
+    color: white;
+}
+
+#eyes {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#eyes:hover{
+    background-color: black;
+    color: white;
+}
+
+#lips {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#lips:hover{
+    background-color: black;
+    color: white;
+}
+
+#tools {
+    background-color: rgb(225,229,238);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+#tools:hover{
+    background-color: black;
+    color: white;
+}
+
+#sort{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#sort-by-price{
+    background-color: rgb(225,229,238);
+    border: none;
+    justify-content: right;
+}
+
+#product{
+    margin-top: 20px;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+div > img{
+    
+    width: 100%;
+}
+
+.card > h3{
+    margin-left: 10px;
+}
+
+.desc-price > p:first-child{
+    margin-left: 10px;
+}
+
+.desc-price > p:nth-child(2){
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* footer start */
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;  
+    padding-top: 30px;
+   
+   
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+} */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px ;
+    color: gray;
+}
+
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    color: gray;
+}
+#footer-bottom2{
+    margin-right: 30%;
+}

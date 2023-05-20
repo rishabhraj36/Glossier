@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyes Items</title>
+    <link rel="stylesheet" href="/Glossier/pro_page.css">
+</head>
+<body>
+    <div id="main">
+        <div id="Product-filter">
+            <button id="all">All</button>
+            <button id="face">Face</button>
+            <button id="eyes">Eyes</button>
+            <button id="lips">Lips</button>
+            <button id="tools">Tools</button>
+        </div>
+        <di id="item_sort">
+            <p>10 items</p>
+            <div id="sort">
+            Sort by price <select id="sort-by-price" onclick="handleprice()">
+                    <option value="">Select</option>
+                    <option value="htl" id="sort-htl">High to Low</option>
+                    <option value="lth" id="sort-lth">Low to High</option>
+                </select>
+            </div>
+        </div>
+        <div id="product">
+            <div id="product-list">
+                <!--append img and name and des and price here-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    let eyesProduct = [
+
+            {
+            id: 15,
+            image: "https://glossier-prod.imgix.net/products/glossier-moisturizing-moon-mask-carousel-01_73d37e4e-bcd4-44f7-ad6a-4b5448ebeb60.png?auto=format&q=40&w=900",
+            name: "Moisturizing Moon Mask",
+            description: "Soothing face treatment",
+            price: "38",
+            category: "makeup"
+            },
+            {
+            id: 16,
+            image: "https://glossier-prod.imgix.net/products/gsuit-curve-01.png?auto=format&q=40&w=900",
+            name: "G Suit",
+            description: "Soft touch lip crème",
+            price: "25",
+            category: "makeup"
+            },
+            {
+            id: 17,
+            image: "https://glossier-prod.imgix.net/products/glossier-lipcolortrio-carousel-01.png?auto=format&q=40&w=900",
+            name: "The Lip Color Trio",
+            description: "G Suit + Ultralip + Generation G",
+            price: "60",
+            category: "makeup"
+            },
+            {
+            id: 18,
+            image: "https://glossier-prod.imgix.net/products/glossier-gsuitduo-carousel-01.png?auto=format&q=40&w=900",
+            name: "Two-piece Suit",
+            description: "Soft touch lip crème",
+            price: "48",
+            category: "makeup"
+            },
+            {
+            id: 19,
+            image: "https://glossier-prod.imgix.net/products/glossier-pencil-rococo-carousel-01.png?auto=format&q=40&w=900",
+            name: "No. 1 Pencil",
+            description: "Perfect glide eyeliner",
+            price: "32",
+            category: "makeup"
+            },
+            {
+            id: 20,
+            image: "https://glossier-prod.imgix.net/products/glossier-penciltrio-carousel-01.png?auto=format&q=40&w=900",
+            name: "No. 1 Pencil Trio",
+            description: "Perfect glide eyeliner",
+            price: "88",
+            category: "makeup"
+            },
+            {
+            id: 21,
+            image: "https://glossier-prod.imgix.net/products/glossier-linelashduo-carousel-01.png?auto=format&q=40&w=900",
+            name: "Line + Lash Duo",
+            description: "Eyeliner pencil + lengthening mascara",
+            price: "48",
+            category: "makeup"
+            },
+            {
+            id: 22,
+            image: "https://glossier-prod.imgix.net/products/glossier-boybrow-black-carousel-01.png?auto=format&q=40&w=900",
+            name: "Boy Brow",
+            description: "Grooming pomade",
+            price: "24",
+            category: "body"
+            },
+    ]
+
+        display(eyesProduct)
+
+
+        function display(faceProduct){
+            document.getElementById("product-list").textContent = ""
+            faceProduct.map(function(elem){
+
+            const div = document.createElement("div")
+            div.className = "card"
+
+            const img = document.createElement("img")
+            img.src = elem.image
+            img.alt = elem.name
+
+            const name = document.createElement("h3")
+            name.textContent = elem.name
+
+            const desc_price = document.createElement("div")
+            desc_price.classList.add("desc-price")
+
+            const desc = document.createElement("p")
+            desc.textContent = elem.description
+
+            const price = document.createElement("p")
+            price.textContent = "$"+ elem.price
+
+            desc_price.append(desc, price)
+            div.append(img, name, desc_price)
+            div.addEventListener("click", function(){
+                addtodetailpage(elem)
+            })
+
+            document.getElementById("product-list").append(div);
+
+        })
+    }
+
+    // async function handleprice(){
+    //     const select = document.getElementById("sort-by-price").value
+
+    //     if(select === "htl"){
+            
+    //         let data1 = items.sort((a, b) => +b.price - +a.price)
+    //         displayData(data1)
+            
+    //     }
+
+    //     if(select === "lth"){
+    //         let data2 = items.sort((a, b) => +a.price - +b.price)
+    //         displayData(data2)
+                
+    //     }
+   
+    // }
+
+    function addtodetailpage(elem){
+        localStorage.setItem("product-items", JSON.stringify(elem))
+
+        window.location.href = "/Glossier/productDetails.html"
+    }
+
+    
+    const all = document.getElementById("all")
+    all.addEventListener("click", showAll)
+
+    function showAll(){
+        
+
+        location.href = "/Glossier/pro_page.html"
+    }
+
+</script>
