@@ -164,3 +164,150 @@ body {
 .body3>div>P {
     width: 50%;
 }
+
+.body4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body4>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body4 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body4 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body4 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body4 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box1+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+.body5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body5>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body5 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body5 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body5 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body5 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box2+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
+
+.body6 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.body6>div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.box3 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.body6 img {
+    display: block;
+    width: 90%;
+
+    margin: auto;
+}
+
+.body6 p+p {
+    text-align: center;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    .body6 {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    .body6 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box3+p {
+    width: 90%;
+    margin: auto;
+    margin-top: -15px;
+}
