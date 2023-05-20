@@ -1,24 +1,34 @@
+/* nabar Start */
+.nav2>div>a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(7, 7, 7);
+}
+
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+
 body {
-    margin: 0%;
-    padding: 0%;
+    background-color: #E1E5EE;
+    font-family: 'Acumin Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav1 {
     background-color: black;
     color: white;
-    height: 25px;
-    width: 90%;
+    /* height: 35px; */
+    width: 95%;
     margin: auto;
     padding-left: 20px;
-    /* padding-top: 1px; */
+    padding-top: 1px;
     align-items: center;
-    position: sticky;
-    top: 0;
-    /* background-color: white; */
 }
 
 .nav1>p {
     margin-top: 10px;
+    width: 90%;
+    text-align: center;
 }
 
 .nav2 {
@@ -27,9 +37,6 @@ body {
     align-items: center;
     width: 98%;
     margin: auto;
-    position: sticky;
-    top: 0;
-    background-color: white;
 }
 
 .nav2>div+div {
@@ -40,6 +47,9 @@ body {
 .nav2 p {
     margin: 10px;
 }
+
+
+/* navBar End */
 
 @media only screen and (min-width:421px) and (max-width:720px) {
     #res {
@@ -327,10 +337,6 @@ input {
     width: 70px;
 }
 
-button {
-    color: blue;
-}
-
 #parent {
     display: flex;
     justify-content: space-between;
@@ -379,4 +385,18 @@ button {
 
 #footer-bottom2 {
     margin-right: 30%;
+}
+
+@media only screen and (min-width:421px) and (max-width:720px) {
+    #foot {
+
+        display: none;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:420px) {
+    #foot {
+
+        display: none;
+    }
 }
