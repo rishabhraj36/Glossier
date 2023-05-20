@@ -6,15 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details Page</title>
     <style>
-          @import url('https://fonts.cdnfonts.com/css/acumin-pro');
+         
+/******** NAVBAR SECTION **********/
+ /* nabar Start */
+ .nav2>div>a{
+  text-decoration: none;
+  margin: 10px;
+  color: rgb(7, 7, 7);
+}
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
         body{
             background-color: #E1E5EE;
             font-family: 'Acumin Pro', sans-serif;
             margin: 0px;
             padding: 0px;
-        }
-/******** NAVBAR SECTION **********/
+        }  
 
+.nav1 {
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 1px;
+  align-items: center;
+}
+
+.nav1>p {
+  margin-top: 10px;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+}
+
+.nav2>div+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav2 p {
+  margin: 10px;
+}
+
+
+/* navBar End */
 /******** DETAILS SECTION **********/
 #details{
     display: flex;
@@ -159,14 +200,94 @@ hr{
     width: 80%;
 }
 
+/* footer Section */
 
+/* footer start */
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;  
+    padding-top: 30px;
+    margin-top: 50px;
+   
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+} */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px ;
+    color: gray;
+}
+
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    color: gray;
+}
+#footer-bottom2{
+    margin-right: 30%;
+}
+
+/* footer section */
 
     </style>
 </head>
 <body>
     <!--****** NAVBAR SECTION  *********** -->
 
-     <div id="navbar" style="text-align: center;"><h1>navbar</h1></div> 
+    <div class="nav1">
+        <p>New site, new samples: a whole new world. Claim your free sample in-cart.</p>
+    </div>
+    <div class="nav2">
+        <div id="Logo" >
+            <h2>
+                Glossier
+            </h2>
+        </div>
+        <div id="res">
+           
+           <a href="pro_page.html">SKINCARE</a>
+           <a href="pro_page.html">MAKEUP</a>
+           <a href="pro_page.html">BODY</a>
+           <a href="pro_page.html">FRAGRANCE</a>
+           <a href="pro_page.html">GLOSSIWEAR</a>
+           <a href="#">SETS</a>
+    
+    
+          </div>
+        <div>
+            <a href="#">SEARCH</a>
+            <a href="login.html">LOG IN</a>
+            <a href="payments.html">BAG <span id="navBag"></span></a>
+        </div>
+    </div> 
 
     <!--****** DETAILS SECTION  *********** -->
     
@@ -187,10 +308,57 @@ hr{
     <!--****** AWARDS SECTION  *********** -->
 
      <div id="awards"></div> 
-     <hr>
+     
     <!--****** FOOTER SECTION *********** -->
 
-     <div id="footer" style="text-align: center;"><h1>footer</h1></div> 
+    <!--****** Footer Section *******-->
+    <div id="parent">
+        <div id="divleft">
+            <div id="footer-row1">
+                <h3>Company</h3>
+                <p>About us</p>
+                <p>Stores</p>
+                <p>Carrers</p>
+                <p>Blog</p>
+            </div>
+            <div id="footer-row2">
+                <h3>Help</h3>
+                <p>FAQ</p>
+                <p>Contact</p>
+                <p>Shipping</p>
+                <p>Returns</p>
+                <p>Gift card</p>
+            </div>
+        </div>
+    
+        <div id="divright">
+            <div id="footer-row">
+                <img src="https://www.capacityllc.com/wp-content/uploads/2017/12/glossier-logo.png" alt="glossier-logo">
+            </div>
+            <div id="footer-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png" alt="twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="youtube">
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin">
+            </div>
+        </div>
+    
+    </div>
+    <div id="footer-parent">
+        <div id="footer-bottom1">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Accessibility</p>
+            <p>Supply Chain Transparency</p>
+            <p>Cookie settings</p>
+        </div>
+        <div id="footer-bottom2">
+            <p>2021 Glossier. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!--Footer Section End-->
 
     <!--****** END *********** -->
 
@@ -198,8 +366,13 @@ hr{
 </body>
 <script>
 //**********  NAVBAR SECTION  ******** 
- let nav=document.getElementById("navbar");
-//  nav.innerHTML=navbar()
+document.getElementById("Logo").addEventListener("click", function(){ location.href="index.html"})
+
+
+
+let dataArray=JSON.parse(localStorage.getItem("cart"))||[];
+
+document.getElementById("navBag").textContent=dataArray.length
 
 //**********  DETAILS SECTION   ******** 
 let elmObj=JSON.parse(localStorage.getItem("product-items"))|| {
@@ -247,13 +420,9 @@ function details(elmObj) {
         location.href="pro_page.html"
     })
 
-    let button2=document.createElement("button");
-    button2.textContent="CART PAGE"
-    button2.addEventListener("click", function(){
-        location.href="payments.html"
-    })
+   
 
-    buttonDiv.append(button,button1,button2)
+    buttonDiv.append(button,button1,)
    descDiv.append(name,price,desc,buttonDiv);
    document.getElementById("details").append(imageDiv,descDiv)
 }
@@ -263,6 +432,9 @@ let cart= JSON.parse(localStorage.getItem("cart"))||[];
 function addToCart(elm){
     cart.push(elm);
     localStorage.setItem("cart",JSON.stringify(cart));
+    let Array=JSON.parse(localStorage.getItem("cart"))||[];
+
+document.getElementById("navBag").textContent=Array.length
     alert("Item Added to Cart Successfully")
 }
 
