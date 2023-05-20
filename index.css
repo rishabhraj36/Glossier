@@ -12,6 +12,9 @@ body {
     padding-left: 20px;
     /* padding-top: 1px; */
     align-items: center;
+    position: sticky;
+    top: 0;
+    /* background-color: white; */
 }
 
 .nav1>p {
@@ -24,6 +27,9 @@ body {
     align-items: center;
     width: 98%;
     margin: auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .nav2>div+div {
@@ -310,4 +316,67 @@ body {
     width: 90%;
     margin: auto;
     margin-top: -15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    width: 70px;
+}
+
+button {
+    color: blue;
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px solid black; */
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+#divleft {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 30px;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#footer-icon>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/* #divleft>footer-row1{
+    padding-left: 10px;
+  } */
+#footer-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    color: gray;
+}
+
+#footer-bottom1 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    color: gray;
+}
+
+#footer-bottom2 {
+    margin-right: 30%;
 }
