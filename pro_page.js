@@ -4,7 +4,11 @@ const productList = document.getElementById("product-list")
 
 const all = document.getElementById("all")
 
+document.getElementById("Logo").addEventListener("click", function(){ location.href="index.html"})
 
+let dataArray=JSON.parse(localStorage.getItem("cart"))||[];
+
+        document.getElementById("navBag").textContent=dataArray.length
 
 const face = document.getElementById("face")
 face.addEventListener("click", showFace)
