@@ -253,6 +253,41 @@ h2{
   left: 150px;
   
 }
+/* Reponsiveness */
+
+@media only screen and (max-width: 600px) {
+
+#payment-outer-div {
+  flex-direction: column;
+}
+
+#payment-left, #payment-right {
+  width: 100%;
+}
+
+.form-row.two-columns {
+  grid-template-columns: 1fr;
+}
+
+#payment-button {
+  justify-content: center;
+}
+
+#payment-button button {
+  width: 100%;
+}
+}
+@media only screen and (max-width: 600px) {
+  #payment-outer-div {
+    flex-direction: column;
+  }
+  
+  #payment-right {
+    order: -1;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -393,7 +428,7 @@ h2{
       </div>
     </div>
     <div id="payment-right">
-      <p>Back to shopping</p>
+      <a a href="products.html"> <p>Back to shopping</p></a>
       <div class="order-summary">
         <h4>Order Summary <span id="length"></span></h4>
         <hr>
