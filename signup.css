@@ -1,3 +1,7 @@
+
+/* footer start */
+
+
 #parent {
   display: flex;
   justify-content: space-between;
@@ -46,6 +50,9 @@
 #footer-bottom2{
   margin-right: 30%;
 }
+
+
+/* footer end */
 
 
 .signupPage{
